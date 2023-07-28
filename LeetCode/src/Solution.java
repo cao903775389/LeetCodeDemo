@@ -118,12 +118,12 @@ public class Solution {
         }
         return count;
     }
-    public static int dfs(char[][] grid, int r, int c) {
+    public static void dfs(char[][] grid, int r, int c) {
         if (!inArea(grid, r, c)) {
-            return 0;
+            return;
         }
         if (grid[r][c] != '1') {
-            return 0;
+            return;
         }
         grid[r][c] = 2;
         dfs(grid, r - 1, c);
@@ -164,8 +164,8 @@ public class Solution {
     }
 
     //226. 翻转二叉树
-    public static TreeNode invertTree(TreeNode root) {
-        
-    }
+//    public static TreeNode invertTree(TreeNode root) {
+//
+//    }
 }
 
